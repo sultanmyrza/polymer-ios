@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+
+# Xcode: per-user state and build output
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+*.xcresult
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# Fastlane output
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+fastlane/README.md
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Secrets: never commit these
+.env
+.env.*
+*.p8
+*.p12
+*.mobileprovision
+*.cer
+fastlane/api_key.json
+
+# Ruby gems installed locally by Bundler
+vendor/bundle/
+.bundle/
