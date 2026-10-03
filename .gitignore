@@ -33,4 +33,3 @@ fastlane/api_key.json
 
 # Ruby gems installed locally by Bundler
 vendor/bundle/
-.bundle/
