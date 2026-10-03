@@ -191,6 +191,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-TW",
 			);
 			mainGroup = DE8DD041306F9D8C003FAB52;
 			minimizedProjectReferenceProxies = 1;
