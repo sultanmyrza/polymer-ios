@@ -1,0 +1,16 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Hello, world! %@" : {
+      "localizations" : {
+        "zh-TW" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "哈囉，世界！%@"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.3"
+}
