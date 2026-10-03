@@ -16,8 +16,17 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Description of what the lane does"
-  lane :custom_lane do
-    # add actions here: https://docs.fastlane.tools/actions
+  private_lane :asc_api_key do
+    app_store_connect_api_key(
+      key_id: ENV["ASC_KEY_ID"],
+      issuer_id: ENV["ASC_ISSUER_ID"],
+      key_filepath: ENV["ASC_KEY_PATH"]
+    )
+  end
+  
+  desc "Install the App Store certificate and profile (creates them on first run)"
+  lane :certificates do
+    asc_api_key
+    match(readonly: is_ci)
   end
 end
