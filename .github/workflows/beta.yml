@@ -2,7 +2,7 @@ name: Beta
 
 on:
   push:
-    branches: [main, ci/fastlane-setup]   # remove the branch name before merging
+    branches: [main]   # remove the branch name before merging
   workflow_dispatch:
 
 concurrency:
