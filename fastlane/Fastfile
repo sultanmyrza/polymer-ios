@@ -30,10 +30,24 @@ platform :ios do
     match(readonly: is_ci)
   end
   
-  desc "Run unit and UI tests on a simulator"
+  desc "Run unit tests on a simulator"
   lane :test do
-    run_tests(scheme: "PolyFeed")
+    run_tests(
+      scheme: "PolyFeed",
+      only_testing: ["PolyFeedTests"],
+      parallel_testing: false
+    )
   end
+
+  desc "Run UI tests on a simulator"
+  lane :ui_test do
+    run_tests(
+      scheme: "PolyFeed",
+      only_testing: ["PolyFeedUITests"],
+      parallel_testing: false
+    )
+  end
+
 
   desc "Build and upload a new build to TestFlight"
   lane :beta do
